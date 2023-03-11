@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>globalMech</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+      integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      li {
+        list-style: none;
+      }
+      .listItem {
+        padding-left: 10px;
+        padding-right: 10px;
+        /* margin-right: 10px; */
+      }
+      .icon {
+        color: aqua;
+        font-weight: bold;
+        font-size: 40px;
+      }
+      .navbar {
+        border-top: 1px solid rgb(58, 57, 57);
+        margin-top: 20px;
+      }
+      .btn:hover {
+        color: aqua;
+        background-color: aqua;
+        border: aqua;
+        font-weight: bold;
+      }
+      .ourSer {
+        padding-left: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: rgb(162, 162, 218);
+        opacity: 0.8;
+        color: white;
+      }
+      .box {
+        background-color: rgb(231, 227, 227);
+      }
+      .box:hover {
+        background-color: rgb(78, 200, 219);
+        color: white;
+      }
+      .abi {
+        font-size: 50px;
+      }
+      .overFew {
+        color: rgb(3, 3, 56);
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .texT {
+        text-align: justify;
+        margin-top: 5px;
+      }
+      .bi-chevron-right {
+        color: rgb(46, 230, 227);
+        font-size: 10px;
+        font-weight: bold;
+      }
+      .ourReal {
+        padding-top: 30px;
+        padding-bottom: 60px;
+      }
+      .key {
+        font-size: 15px;
+        padding-bottom: 30px;
+      }
+      .bodyHead {
+        background-color: rgb(78, 200, 219);
+        color: white;
+        padding: 5px 10px;
+        width: 200px;
+        height: 50px;
+        margin-right: 20px;
+        text-align: center;
+      }
+      .akintola {
+        padding-top: 90px;
+      }
+      .headOffice {
+        background-color: rgb(232, 237, 239);
+        padding-bottom: 40px;
+      }
+      .global {
+        border-left: 5px solid rgb(78, 200, 219);
+        background-color: rgb(241, 243, 246);
+        font-style: italic;
+        margin-top: 50px;
+      }
+      .blueColor {
+        background-color: rgb(0, 6, 76);
+        color: white;
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      .hBlue {
+        color: rgb(47, 209, 192);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="header container">
+        <div class="container">
+          <div class="row bg-primary">
+            <div class="col-sm-5 col-md-6">
+              <div class="leftBar text-white">
+                <div class="welcomeText">Powering the nation since 2015...</div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <div class="topBar-right row text-white">
+                <ul class="top-menu">
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+                <div class="row px-5">
+                  <li class="listItem">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li class="listItem">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                  </li>
+                  <li class="listItem">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                  </li>
+                  <li class="listItem">
+                    <a href="#"><i class="bi bi-pinterest"></i></a>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <img class="" src="logo.png" alt="" />
+          </div>
+          <div class="col-sm-3 mr-5">
+            <div class="email d-flex pt-1 w-75">
+              <div class="icon pr-2"><i class="bi bi-envelope"></i></div>
+              <div class="emailBody">
+                Email Support <br />
+                <span style="font-weight: bold"
+                  >info@globalelectromechpowerltd.com</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 text-right ml-3">
+            <div class="email d-flex pt-1">
+              <div class="icon pr-2"><i class="bi bi-telephone-fill"></i></div>
+              <div class="emailBody">
+                Call Support<br />
+                <span style="font-weight: bold">+234 803 230 8588</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 ml-3 p-1 text-right">
+            <button class="btn btn-danger">
+              <a href="#">Enquiry</a>
+            </button>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white text-dark">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><strong>Home </strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><strong>About us</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><strong>Services</strong></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link"><strong>Contact</strong> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"><strong>Career</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"><strong>Admin</strong></a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </nav>
+        <div class="ourSer">
+          <div>
+            <h1>Our Company</h1>
+            <a class="link-dark text-white" href="#">About Us /</a
+            ><span> Our Company</span>
+          </div>
+        </div>
+        <div class="row bg-white">
+          <div class="col-sm-4 mb-3">
+            <div class="box h-100 mt-3 w-100 py-3 pr-1">
+              <p class="pl-4 abi"><i class="bi bi-star"></i></p>
+              <h5 class="pl-4" style="color: rgb(0, 0, 13)">QUALITY DRIVEN</h5>
+              <p class="pl-4">Patronising us mean your quality is Bestbet.</p>
+            </div>
+          </div>
+          <div class="col-sm-4 mb-3">
+            <div class="box h-100 mt-3 w-100 py-3 pr-1">
+              <p class="pl-4 abi"><i class="bi bi-umbrella-fill"></i></p>
+              <h5 class="pl-4" style="color: rgb(0, 0, 13)">
+                CUSTOMER FOCUSED
+              </h5>
+              <p class="pl-4">We treat all our Customer like Kings.</p>
+            </div>
+          </div>
+          <div class="col-sm-4 mb-3">
+            <div class="box h-100 mt-3 w-100 py-3 pr-1">
+              <p class="pl-4 abi"><i class="bi bi-people-fill"></i></p>
+              <h5 class="pl-4" style="color: rgb(0, 0, 13)">GLOBAL SOURCING</h5>
+              <p class="pl-4">
+                We source for quality product all around the world.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="progress mt-5" style="height: 3px">
+          <div
+            class="progress-bar bg-danger"
+            role="progressbar "
+            style="width: 25%; height: 5px"
+            aria-valuenow="5"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+        <div class="overFew">COMPANY OVERVIEW</div>
+        <div class="row mt-5 ourReal">
+          <div class="col-sm-4 mb-5">
+            <div class="overFew">
+              OUR REAL COMMITMENT REACHES BEYOND POWER SOLUTIONS.
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <h3>GLOBAL ELECTROMECH POWER LIMITED</h3>
+            <p class="texT">
+              is a seasoned procurement expert with 10 years hands on experience
+              on Perkins generators spares. As a core spare parts expert, we
+              have guided many clients on cost reduction without compromising
+              quality on spare parts. Our Procurement knowledge has helped a
+              bigger conglomerate to save huge cost on timely buying. GLOBAL
+              ELECTROMECH POWER LIMITED is a leading Player in the energy sector
+              in Nigeria. We help ambitious organization to achieve regular
+              power supply.
+            </p>
+          </div>
+        </div>
+        <div class="progress mt-5" style="height: 3px">
+          <div
+            class="progress-bar bg-danger"
+            role="progressbar "
+            style="width: 25%; height: 5px"
+            aria-valuenow="5"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+        <div class="overFew">Experience</div>
+        <div class="key pt-5">
+          <h3>Key Responsibilities:</h3>
+          <p>
+            <i class="bi bi-chevron-right"></i> Buying wisely and Supplying
+            Perkins Generators and Spares
+          </p>
+          <p>
+            <i class="bi bi-chevron-right"></i> Guiding clients in identifying
+            faulty spare parts before purchase
+          </p>
+          <p>
+            <i class="bi bi-chevron-right"></i> Valuing energy consumption for
+            properties to ascertain the right capacity of generator
+          </p>
+          <p>
+            <i class="bi bi-chevron-right"></i> Assisting client in maintaining
+            a meaningful inventory of spare parts
+          </p>
+          <p>
+            <i class="bi bi-chevron-right"></i> Emotional Negotiation on spares
+          </p>
+          <p>
+            <i class="bi bi-chevron-right"></i> Training End Users on Proper
+            Management of their Gen Set
+          </p>
+        </div>
+      </div>
+      <div class="headOffice container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 mt-5">
+              <div class="bodyHead">Head of Office</div>
+            </div>
+            <div class="col-sm-8">
+              <div class="akintola">
+                <h3>Akinola</h3>
+                <strong>HEAD OF OPERATIONS</strong>
+                <p class="pt-5">
+                  Welcome to Global Electromech Power Limited a subsidiary of
+                  Onwardglobal logistics solution concept established in 2015
+                  with the objective of carrying out distribution, Engineering,
+                  Sales Hire, Leasing, Servicing, Maintenance, Overhauling and
+                  rentals of diesel generating sets contributing to the
+                  development of power sector in Nigeria economy. Global
+                  Electromech Power limited is one of the distributors/ dealers
+                  of power generation companies in Nigeria that has established
+                  and distinguished itself through quality delivery and
+                  dependable power products in our market. The company is a
+                  distributor/dealer of power generating sets from renowed
+                  generator manufacturers: Fg Wilson Perkins/ CATERPILLAR engine
+                  and Stamford/Leroy somer alternator UK/US made... providing
+                  quality generating sets ranging from 12.5kva to 2000kva.. And
+                  SDFMO generators manufacturing Base-France..Kohler/ John
+                  Deere/ Volvo engine ranging from 15kva to 4200kva. All the
+                  brands premium and are specifically designed for homes,
+                  business and industries..
+                </p>
+                <div class="w-100 p-3 global">
+                  GLOBAL ELECTROMECH POWER LIMITED continues to grow ever day
+                  thanks to the confidence our clients have in us.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid blueColor">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="d-flex">
+                <h1 class="mr-2 hBlue" style="font-size: 70px">10</h1>
+                <span class="pt-3">
+                  Offices <br />
+                  Worldwide
+                </span>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="d-flex">
+                <h1 class="mr-2 hBlue" style="font-size: 70px">10</h1>
+                <span class="pt-3">
+                  Refineries & <br />
+                  Operations
+                </span>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="d-flex">
+                <h1 class="mr-2 hBlue" style="font-size: 70px">5700</h1>
+                <span class="pt-3">
+                  Satisfied <br />
+                  Employees
+                </span>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="d-flex">
+                <h1 class="mr-2 hBlue" style="font-size: 70px">22</h1>
+                <span class="pt-3">
+                  Awards & <br />
+                  Recognitions
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
