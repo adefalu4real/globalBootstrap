@@ -58,11 +58,19 @@
       }
       .ourSer {
         padding-left: 10px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 80px;
+        padding-bottom: 150px;
         background-color: rgb(162, 162, 218);
-        opacity: 0.8;
+        /* opacity: 0.5; */
         color: white;
+        z-index: 1;
+      }
+      .boxHolder {
+        margin-top: -100px;
+        height: 300px;
+        background-color: white !important;
+        z-index: 3;
+        opacity: 1;
       }
       .box {
         background-color: rgb(231, 227, 227);
@@ -78,6 +86,7 @@
         color: rgb(3, 3, 56);
         font-size: 25px;
         font-weight: bold;
+        padding-bottom: 20px;
       }
       .texT {
         text-align: justify;
@@ -89,8 +98,8 @@
         font-weight: bold;
       }
       .ourReal {
-        padding-top: 30px;
-        padding-bottom: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
       .key {
         font-size: 15px;
@@ -102,6 +111,7 @@
         padding: 5px 10px;
         width: 200px;
         height: 50px;
+
         margin-right: 20px;
         text-align: center;
       }
@@ -125,43 +135,130 @@
         padding-bottom: 60px;
       }
       .hBlue {
-        color: rgb(47, 209, 192);
+        color: rgba(66, 239, 222, 0.993);
+      }
+      .header_1 {
+        background-color: rgb(2, 2, 59);
+      }
+      .img1 {
+        height: 300px;
+        width: 350px;
+      }
+      .img2 {
+        height: 150px;
+        width: 300px;
+      }
+      .boxHolder2 {
+        background-color: white !important;
+        /* height: 200px; */
+        z-index: 3;
+        opacity: 1;
+        padding-bottom: -30px;
+        margin-bottom: 10px;
+        border-top: 1px solid rgb(237, 237, 237);
+        padding-top: 10px;
+      }
+      .bottom {
+        background-color: rgb(6, 6, 89);
+        z-index: 1;
+        margin-top: 30px;
+      }
+      .downLink a {
+        color: rgb(34, 227, 227);
+        text-decoration: none;
+      }
+      .downLink a:hover {
+        color: red;
+      }
+      .doYou {
+        margin-top: 50px;
+        padding-top: 50px;
+      }
+      .doYou a:hover {
+        color: aqua;
+      }
+      .downFlex {
+        display: flex;
+        flex-direction: row;
+      }
+      .downFlex_1 {
+        width: 300px;
+        margin-left: 5px;
+      }
+      .downFlex_2 {
+        width: 300px;
+        margin-left: 5px;
+      }
+      .downFlex_3 {
+        width: 300px;
+        margin-left: 5px;
+      }
+      .downFlex_4 {
+        width: 300px;
+        margin-left: 5px;
+      }
+      @media screen and (min-width: 400px) {
+        .downFlex {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+      @media screen and (min-width: 398px) {
+        .downFlex {
+          flex-direction: column;
+        }
+      }
+      .footer-subscribe {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-text-size-adjust: 100%;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #ffffff;
+        -webkit-box-sizing: inherit;
+        position: relative;
       }
     </style>
   </head>
   <body>
     <div class="container-fluid">
-      <div class="header container">
-        <div class="container">
-          <div class="row bg-primary">
-            <div class="col-sm-5 col-md-6">
-              <div class="leftBar text-white">
-                <div class="welcomeText">Powering the nation since 2015...</div>
+      <div class="header">
+        <div class="container-fluid header_1">
+          <div class="header_1 container">
+            <div class="row pt-1">
+              <div class="col-sm-5 col-md-6">
+                <div class="leftBar text-white">
+                  <div class="welcomeText">
+                    Powering the nation since 2015...
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-6">
-              <div class="topBar-right row text-white">
-                <ul class="top-menu">
-                  <li><a href="#">Contact us</a></li>
-                </ul>
-                <div class="row px-5">
-                  <li class="listItem">
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                  </li>
-                  <li class="listItem">
-                    <a href="#"><i class="bi bi-twitter"></i></a>
-                  </li>
-                  <li class="listItem">
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                  </li>
-                  <li class="listItem">
-                    <a href="#"><i class="bi bi-pinterest"></i></a>
-                  </li>
+              <div class="col-sm-6 col-md-6">
+                <div class="topBar-right row text-white">
+                  <ul class="top-menu">
+                    <li><a href="#">Contact us</a></li>
+                  </ul>
+                  <div class="row px-5">
+                    <li class="listItem">
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li class="listItem">
+                      <a href="#"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li class="listItem">
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li class="listItem">
+                      <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </li>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="row">
           <div class="col-sm-3">
             <img class="" src="logo.png" alt="" />
@@ -237,14 +334,16 @@
             </form>
           </div>
         </nav>
-        <div class="ourSer">
-          <div>
-            <h1>Our Company</h1>
-            <a class="link-dark text-white" href="#">About Us /</a
-            ><span> Our Company</span>
-          </div>
+      </div>
+      <div class="ourSer container-fluid">
+        <div class="container">
+          <h1>Our Company</h1>
+          <a class="link-dark text-white" href="#">About Us /</a
+          ><span> Our Company</span>
         </div>
-        <div class="row bg-white">
+      </div>
+      <div class="container boxHolder">
+        <div class="row">
           <div class="col-sm-4 mb-3">
             <div class="box h-100 mt-3 w-100 py-3 pr-1">
               <p class="pl-4 abi"><i class="bi bi-star"></i></p>
@@ -271,6 +370,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="progress mt-5" style="height: 3px">
           <div
             class="progress-bar bg-danger"
@@ -281,7 +382,7 @@
             aria-valuemax="100"
           ></div>
         </div>
-        <div class="overFew">COMPANY OVERVIEW</div>
+        <div class="overFew container">COMPANY OVERVIEW</div>
         <div class="row mt-5 ourReal">
           <div class="col-sm-4 mb-5">
             <div class="overFew">
@@ -289,7 +390,7 @@
             </div>
           </div>
           <div class="col-sm-8">
-            <h3>GLOBAL ELECTROMECH POWER LIMITED</h3>
+            <h6>GLOBAL ELECTROMECH POWER LIMITED</h6>
             <p class="texT">
               is a seasoned procurement expert with 10 years hands on experience
               on Perkins generators spares. As a core spare parts expert, we
@@ -344,7 +445,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-4 mt-5">
-              <div class="bodyHead">Head of Office</div>
+              <div class="bodyHead pt-3">Head of Office</div>
             </div>
             <div class="col-sm-8">
               <div class="akintola">
@@ -417,6 +518,205 @@
                   Recognitions
                 </span>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mt-5 pb-5">
+          <div class="col-sm-6">
+            <div class="key">
+              <h3>Key Responsibilities:</h3>
+              <p>
+                <i class="bi bi-chevron-right"></i> Meeting Customer expectation
+                and creating value globally
+              </p>
+              <p>
+                <i class="bi bi-chevron-right"></i> Provide repair services to a
+                diverse customer base across multiple sectors
+              </p>
+              <p>
+                <i class="bi bi-chevron-right"></i> Remain responsive to our
+                customers’ needs
+              </p>
+              <p>
+                <i class="bi bi-chevron-right"></i> Manage your time so you’ll
+                get more done in less time
+              </p>
+              <h3>Our Vision</h3>
+              <p>
+                <i class="bi bi-chevron-right"></i> To be the best and
+                dependable company on a global scale
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <img class="img2" src="kohler.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="progress mt-5" style="height: 3px">
+          <div
+            class="progress-bar bg-danger"
+            role="progressbar "
+            style="width: 25%; height: 5px"
+            aria-valuenow="5"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+        <div class="why mt-3">
+          <h3>WHY CHOOSING US</h3>
+        </div>
+        <div class="row g-3 my-5">
+          <div class="col-sm-4 col-md-4 pl-1">
+            <img class="img1" src="professional.png" alt="" />
+            <h6 class="pt-3">We Are Professional</h6>
+            <p class="pt-3">
+              Provide repair services to a diverse customer base across multiple
+              sectors.
+            </p>
+          </div>
+          <div class="col-sm-4 col-md-4 pl-1">
+            <img class="img1" src="trusted.png" alt="" />
+            <h6 class="pt-3">We Are Trusted</h6>
+            <p class="pt-3">Remain responsive to our customers’ needs.</p>
+          </div>
+          <div class="col-sm-4 col-md-4 pl-1">
+            <img class="img1" src="expert.png" alt="" />
+            <h6 class="pt-3">We are Expert</h6>
+            <p class="pt-3">
+              Manage your time so you’ll get more done in less time.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid bottom">
+        <div class="container boxHolder2">
+          <div class="row">
+            <div class="col-sm-4 mb-3 col-md-4">
+              <div class="box h-75 mb-3 w-100 py-3 pr-1 text-center">
+                <h5 class="pl-4" style="color: rgb(0, 0, 13)">CALL US NOW</h5>
+                <p class="pl-4">Mobile: +2348032308588.</p>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-3 col-md-4">
+              <div class="box h-75 mb-3 w-100 py-3 pr-1 text-center">
+                <h5 class="pl-4" style="color: rgb(0, 0, 13)">COME VISIT US</h5>
+                <p class="pl-4">
+                  4, Ayodele Diyan Street, Ikeja, Lagos. 144, Odo-eran Off Navy
+                  School Of Music, Opp. Obasanjo Fence, Otta Ogun State..
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-3 col-md-4">
+              <div class="box h-75 mb-3 w-100 py-3 pr-1 text-center">
+                <h5 class="pl-4" style="color: rgb(0, 0, 13)">
+                  SEND US A MESSAGE
+                </h5>
+                <p class="pl-4">Mail: info@globalelectromechpowerltd.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="downFlex">
+            <div class="downFlex_1">
+              <img class="pt-5" src="logo.png" alt="" />
+              <p class="text-white pt-3 mb-5">
+                Provide repair services to a diverse customer base across
+                multiple sectors
+              </p>
+
+              <div class="row px-5 doYou">
+                <li class="listItem">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="listItem">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li class="listItem">
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="listItem">
+                  <a href="#"><i class="bi bi-pinterest"></i></a>
+                </li>
+              </div>
+            </div>
+            <div class="downFlex_2">
+              <div class="progress mt-5 ml-1" style="height: 3px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar "
+                  style="width: 50%; height: 5px"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div class="text-white py-3 pl-1"><h3>Recent Post</h3></div>
+              <div class="downLink pl-1 py-2"><a href="#">HOME</a></div>
+              <div class="downLink pl-1 py-2"><a href="#">ABOUT US</a></div>
+              <div class="downLink pl-1 py-2"><a href="#">CONTACT</a></div>
+              <div class="downLink pl-1 py-2"><a href="#">SERVICES</a></div>
+              <div class="downLink pl-1 py-2"><a href="#">ADMIN</a></div>
+            </div>
+            <div class="downFlex_3">
+              <div class="progress mt-5 ml-1" style="height: 3px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar "
+                  style="width: 50%; height: 5px"
+                  aria-valuenow="5"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div class="text-white py-3 pl-2"><h3>Recent Post</h3></div>
+              <div class="downLink pl-1 py-2"><a href="#">Sales</a></div>
+              <div class="downLink pl-1 py-2"><a href="#">Maintenance</a></div>
+              <div class="downLink pl-1 py-2"><a href="#">services</a></div>
+              <div class="downLink pl-1 py-2"><a href="#">Rentals</a></div>
+              <div class="downLink pl-1 py-2"><a href="#">Information</a></div>
+              <div class="downLink pl-1 py-2"><a href="#">Load</a></div>
+            </div>
+            <div class="downFlex_4">
+              <div class="progress mt-5 ml-1" style="height: 3px">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar "
+                  style="width: 50%; height: 5px"
+                  aria-valuenow="5"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div class="text-white py-3 pl-1"><h3>Recent Post</h3></div>
+              <div class="pl-1 py-2">
+                <p class="text-white">
+                  Do you want to be getting latest update of our new arrival?
+                </p>
+              </div>
+              <form action="#" class="footer-subscribe">
+                <div class="d-flex">
+                  <input
+                    type="email"
+                    name="EMAIL"
+                    class="form-control"
+                    placeholder="enter your email"
+                  />
+                  <!-- <input id="p_submit" type="submit" value="send" /> -->
+                  <button class="btn btn-danger">
+                    <i class="bi bi-envelope"></i>
+                  </button>
+                </div>
+                <p class="text-secondary pt-3">
+                  Get latest updates and offers.
+                </p>
+              </form>
             </div>
           </div>
         </div>
