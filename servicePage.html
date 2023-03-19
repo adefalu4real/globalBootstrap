@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>globalMech</title>
+    <title>Services</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -37,11 +37,9 @@
         list-style: none;
       }
       .listItem {
-        list-style: none;
-      }
-      .listItem {
         padding-left: 10px;
         padding-right: 10px;
+        list-style: none;
         /* margin-right: 10px; */
       }
       .icon {
@@ -77,6 +75,7 @@
       }
       .box {
         background-color: rgb(231, 227, 227);
+        border: 1px solid rgb(122, 115, 115);
       }
       .box:hover {
         background-color: rgb(78, 200, 219);
@@ -85,75 +84,32 @@
       .abi {
         font-size: 50px;
       }
-      .overFew {
-        color: rgb(3, 3, 56);
-        font-size: 25px;
-        font-weight: bold;
-        padding-bottom: 20px;
-      }
-      .texT {
-        text-align: justify;
-        margin-top: 5px;
-      }
       .bi-chevron-right {
         color: rgb(46, 230, 227);
         font-size: 10px;
         font-weight: bold;
       }
-      .ourReal {
-        padding-top: 10px;
-        padding-bottom: 10px;
+      .PageLong {
+        padding-top: 40px;
+        margin-top: 250px;
       }
-      .key {
-        font-size: 15px;
-        padding-bottom: 30px;
-      }
-      .bodyHead {
-        background-color: rgb(78, 200, 219);
-        color: white;
-        padding: 5px 10px;
-        width: 200px;
-        height: 50px;
-
-        margin-right: 20px;
-        text-align: center;
-      }
-      .akintola {
-        padding-top: 90px;
-      }
-      .headOffice {
-        background-color: rgb(232, 237, 239);
-        padding-bottom: 40px;
-      }
-      .global {
-        border-left: 5px solid rgb(78, 200, 219);
-        background-color: rgb(241, 243, 246);
-        font-style: italic;
-        margin-top: 50px;
+      .PageLong2 {
+        margin-top: 100px;
+        margin-bottom: 100px;
       }
       .blueColor {
         background-color: rgb(0, 6, 76);
         color: white;
         padding-top: 60px;
         padding-bottom: 60px;
-        margin-bottom: 40px;
       }
       .hBlue {
         color: rgba(66, 239, 222, 0.993);
       }
-      .header_1 {
-        background-color: rgb(2, 2, 59);
-      }
-      .img1 {
-        height: 300px;
-        width: 350px;
-      }
+
       .img2 {
         height: 150px;
         width: 300px;
-      }
-      .imagePage {
-        margin-bottom: 200px;
       }
       .boxB {
         /* margin-bottom: 30px; */
@@ -205,13 +161,13 @@
       <div class="container-fluid header_1">
         <div class="header_1 container">
           <div class="row pt-1">
-            <div class="col-sm-6 col-md-6">
+            <div class="col-sm-5 col-md-6">
               <div class="leftBar text-white">
                 <div class="welcomeText">Powering the nation since 2015...</div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-6 pl-3">
-              <div class="topBar-right row text-white text-right">
+            <div class="col-sm-6 col-md-6">
+              <div class="topBar-right row text-white">
                 <ul class="top-menu">
                   <li><a href="#">Contact us</a></li>
                 </ul>
@@ -238,10 +194,10 @@
     <div class="container-fluid">
       <div class="container">
         <div class="row">
-          <div class="col-sm-3">
-            <img class="" src="logo.png" alt="" />
+          <div class="col-sm-3 col-md-3">
+            <img class="w-75" src="logo.png" alt="" />
           </div>
-          <div class="col-sm-3 mr-5">
+          <div class="col-sm-3 mr-5 col-md-3">
             <div class="email d-flex pt-1 w-75">
               <div class="icon pr-2"><i class="bi bi-envelope"></i></div>
               <div class="emailBody">
@@ -252,16 +208,18 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3 ml-3">
+          <div class="col-sm-3 text-right ml-3 col-md-3">
             <div class="email d-flex pt-1">
-              <div class="icon pr-2"><i class="bi bi-telephone-fill"></i></div>
+              <div class="icon pr-2">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
               <div class="emailBody">
                 Call Support<br />
                 <span style="font-weight: bold">+234 803 230 8588</span>
               </div>
             </div>
           </div>
-          <div class="col-sm-2 ml-3 p-1 text-right">
+          <div class="col-sm-2 ml-3 p-1 col-md-2">
             <button class="btn btn-danger">
               <a href="#">Enquiry</a>
             </button>
@@ -319,262 +277,164 @@
           </div>
         </nav>
       </div>
-      <div class="ourSer container-fluid">
-        <div class="container">
-          <h1>Our Company</h1>
-          <a class="link-dark text-white" href="#">About Us /</a
-          ><span> Our Company</span>
-        </div>
-      </div>
-      <div class="container boxHolder">
-        <div class="row">
-          <div class="col-sm-4 mb-3">
-            <div class="box h-100 mt-3 w-100 py-3 pr-1">
-              <p class="pl-4 abi"><i class="bi bi-star"></i></p>
-              <h5 class="pl-4" style="color: rgb(0, 0, 13)">QUALITY DRIVEN</h5>
-              <p class="pl-4">Patronising us mean your quality is Bestbet.</p>
-            </div>
-          </div>
-          <div class="col-sm-4 mb-3">
-            <div class="box h-100 mt-3 w-100 py-3 pr-1">
-              <p class="pl-4 abi"><i class="bi bi-umbrella-fill"></i></p>
-              <h5 class="pl-4" style="color: rgb(0, 0, 13)">
-                CUSTOMER FOCUSED
-              </h5>
-              <p class="pl-4">We treat all our Customer like Kings.</p>
-            </div>
-          </div>
-          <div class="col-sm-4 mb-3">
-            <div class="box h-100 mt-3 w-100 py-3 pr-1">
-              <p class="pl-4 abi"><i class="bi bi-people-fill"></i></p>
-              <h5 class="pl-4" style="color: rgb(0, 0, 13)">GLOBAL SOURCING</h5>
-              <p class="pl-4">
-                We source for quality product all around the world.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="progress mt-5" style="height: 3px">
-          <div
-            class="progress-bar bg-danger"
-            role="progressbar "
-            style="width: 25%; height: 5px"
-            aria-valuenow="5"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          ></div>
-        </div>
-        <div class="overFew container">COMPANY OVERVIEW</div>
-        <div class="row mt-5 ourReal">
-          <div class="col-sm-4 mb-5">
-            <div class="overFew">
-              OUR REAL COMMITMENT REACHES BEYOND POWER SOLUTIONS.
-            </div>
-          </div>
-          <div class="col-sm-8">
-            <h6>GLOBAL ELECTROMECH POWER LIMITED</h6>
-            <p class="texT">
-              is a seasoned procurement expert with 10 years hands on experience
-              on Perkins generators spares. As a core spare parts expert, we
-              have guided many clients on cost reduction without compromising
-              quality on spare parts. Our Procurement knowledge has helped a
-              bigger conglomerate to save huge cost on timely buying. GLOBAL
-              ELECTROMECH POWER LIMITED is a leading Player in the energy sector
-              in Nigeria. We help ambitious organization to achieve regular
-              power supply.
-            </p>
-          </div>
-        </div>
-        <div class="progress mt-5" style="height: 3px">
-          <div
-            class="progress-bar bg-danger"
-            role="progressbar "
-            style="width: 25%; height: 5px"
-            aria-valuenow="5"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          ></div>
-        </div>
-        <div class="overFew">Experience</div>
-        <div class="key pt-5">
-          <h3>Key Responsibilities:</h3>
-          <p>
-            <i class="bi bi-chevron-right"></i> Buying wisely and Supplying
-            Perkins Generators and Spares
-          </p>
-          <p>
-            <i class="bi bi-chevron-right"></i> Guiding clients in identifying
-            faulty spare parts before purchase
-          </p>
-          <p>
-            <i class="bi bi-chevron-right"></i> Valuing energy consumption for
-            properties to ascertain the right capacity of generator
-          </p>
-          <p>
-            <i class="bi bi-chevron-right"></i> Assisting client in maintaining
-            a meaningful inventory of spare parts
-          </p>
-          <p>
-            <i class="bi bi-chevron-right"></i> Emotional Negotiation on spares
-          </p>
-          <p>
-            <i class="bi bi-chevron-right"></i> Training End Users on Proper
-            Management of their Gen Set
-          </p>
-        </div>
-      </div>
-      <div class="headOffice container-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4 mt-5">
-              <div class="bodyHead pt-3">Head of Office</div>
-            </div>
-            <div class="col-sm-8">
-              <div class="akintola">
-                <h3>Akinola</h3>
-                <strong>HEAD OF OPERATIONS</strong>
-                <p class="pt-5">
-                  Welcome to Global Electromech Power Limited a subsidiary of
-                  Onwardglobal logistics solution concept established in 2015
-                  with the objective of carrying out distribution, Engineering,
-                  Sales Hire, Leasing, Servicing, Maintenance, Overhauling and
-                  rentals of diesel generating sets contributing to the
-                  development of power sector in Nigeria economy. Global
-                  Electromech Power limited is one of the distributors/ dealers
-                  of power generation companies in Nigeria that has established
-                  and distinguished itself through quality delivery and
-                  dependable power products in our market. The company is a
-                  distributor/dealer of power generating sets from renowed
-                  generator manufacturers: Fg Wilson Perkins/ CATERPILLAR engine
-                  and Stamford/Leroy somer alternator UK/US made... providing
-                  quality generating sets ranging from 12.5kva to 2000kva.. And
-                  SDFMO generators manufacturing Base-France..Kohler/ John
-                  Deere/ Volvo engine ranging from 15kva to 4200kva. All the
-                  brands premium and are specifically designed for homes,
-                  business and industries..
-                </p>
-                <div class="w-100 p-3 global">
-                  GLOBAL ELECTROMECH POWER LIMITED continues to grow ever day
-                  thanks to the confidence our clients have in us.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid blueColor">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-3">
-              <div class="d-flex">
-                <h1 class="mr-2 hBlue" style="font-size: 70px">10</h1>
-                <span class="pt-3">
-                  Offices <br />
-                  Worldwide
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="d-flex">
-                <h1 class="mr-2 hBlue" style="font-size: 70px">10</h1>
-                <span class="pt-3">
-                  Refineries & <br />
-                  Operations
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="d-flex">
-                <h1 class="mr-2 hBlue" style="font-size: 70px">5700</h1>
-                <span class="pt-3">
-                  Satisfied <br />
-                  Employees
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="d-flex">
-                <h1 class="mr-2 hBlue" style="font-size: 70px">22</h1>
-                <span class="pt-3">
-                  Awards & <br />
-                  Recognitions
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row mt-5 pb-5">
-          <div class="col-sm-6">
-            <div class="key">
-              <h3>Key Responsibilities:</h3>
-              <p>
-                <i class="bi bi-chevron-right"></i> Meeting Customer expectation
-                and creating value globally
-              </p>
-              <p>
-                <i class="bi bi-chevron-right"></i> Provide repair services to a
-                diverse customer base across multiple sectors
-              </p>
-              <p>
-                <i class="bi bi-chevron-right"></i> Remain responsive to our
-                customers’ needs
-              </p>
-              <p>
-                <i class="bi bi-chevron-right"></i> Manage your time so you’ll
-                get more done in less time
-              </p>
-              <h3>Our Vision</h3>
-              <p>
-                <i class="bi bi-chevron-right"></i> To be the best and
-                dependable company on a global scale
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <img class="img2" src="kohler.png" alt="" />
-          </div>
-        </div>
-      </div>
+    </div>
 
-      <div class="container imagePage">
-        <div class="progress mt-5" style="height: 3px">
-          <div
-            class="progress-bar bg-danger"
-            role="progressbar "
-            style="width: 25%; height: 5px"
-            aria-valuenow="5"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          ></div>
+    <div class="ourSer container-fluid">
+      <div class="container">
+        <h1>Our Company</h1>
+        <a class="link-dark text-white" href="#">About Us /</a
+        ><span> Our Company</span>
+      </div>
+    </div>
+    <div class="container boxHolder">
+      <div class="row bg-light no-gutters">
+        <div class="col-sm-4 col-md-4">
+          <div class="box h-100 mt-3 w-100 py-3">
+            <p class="pl-4 abi"><i class="bi bi-star"></i></p>
+            <h5 class="pl-4" style="color: rgb(0, 0, 13)">QUALITY DRIVEN</h5>
+            <p class="pl-4">Patronising us mean your quality is Bestbet.</p>
+          </div>
         </div>
-        <div class="why mt-3">
-          <h3>WHY CHOOSING US</h3>
+        <div class="col-sm-4 col-md-4">
+          <div class="box h-100 mt-3 w-100 py-3 pr-1">
+            <p class="pl-4 abi"><i class="bi bi-umbrella-fill"></i></p>
+            <h5 class="pl-4" style="color: rgb(0, 0, 13)">CUSTOMER FOCUSED</h5>
+            <p class="pl-4">We treat all our Customer like Kings.</p>
+          </div>
         </div>
-        <div class="row g-3 my-5">
-          <div class="col-sm-4 col-md-4 pl-1">
-            <img class="img1" src="professional.png" alt="" />
-            <h6 class="pt-3">We Are Professional</h6>
-            <p class="pt-3">
-              Provide repair services to a diverse customer base across multiple
-              sectors.
+        <div class="col-sm-4 col-md-4">
+          <div class="box h-100 mt-3 w-100 py-3 pr-1">
+            <p class="pl-4 abi"><i class="bi bi-people-fill"></i></p>
+            <h5 class="pl-4" style="color: rgb(0, 0, 13)">GLOBAL SOURCING</h5>
+            <p class="pl-4">
+              We source for quality product all around the world.
             </p>
           </div>
-          <div class="col-sm-4 col-md-4 pl-1">
-            <img class="img1" src="trusted.png" alt="" />
-            <h6 class="pt-3">We Are Trusted</h6>
-            <p class="pt-3">Remain responsive to our customers’ needs.</p>
+        </div>
+      </div>
+      <div class="row bg-light no-gutters">
+        <div class="col-sm-4 col-md-4">
+          <div class="box h-100 mt-3 w-100 py-3">
+            <p class="pl-4 abi"><i class="bi bi-star"></i></p>
+            <h5 class="pl-4" style="color: rgb(0, 0, 13)">QUALITY DRIVEN</h5>
+            <p class="pl-4">Patronising us mean your quality is Bestbet.</p>
           </div>
-          <div class="col-sm-4 col-md-4 pl-1">
-            <img class="img1" src="expert.png" alt="" />
-            <h6 class="pt-3">We are Expert</h6>
-            <p class="pt-3">
-              Manage your time so you’ll get more done in less time.
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <div class="box h-100 mt-3 w-100 py-3 pr-1">
+            <p class="pl-4 abi"><i class="bi bi-umbrella-fill"></i></p>
+            <h5 class="pl-4" style="color: rgb(0, 0, 13)">CUSTOMER FOCUSED</h5>
+            <p class="pl-4">We treat all our Customer like Kings.</p>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <div class="box h-100 mt-3 w-100 py-3 pr-1">
+            <p class="pl-4 abi"><i class="bi bi-people-fill"></i></p>
+            <h5 class="pl-4" style="color: rgb(0, 0, 13)">GLOBAL SOURCING</h5>
+            <p class="pl-4">
+              We source for quality product all around the world.
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row PageLong">
+        <div class="col-sm-6">
+          <div class="key pt-5">
+            <h3 class="pl-3">Sales Manager</h3>
+            <p class="pl-3" style="font-weight: bold">Key Role:</p>
+            <p>
+              <i class="bi bi-chevron-right"></i> Buying wisely for the
+              conglomerate.
+            </p>
+            <p>
+              <i class="bi bi-chevron-right"></i> Identifying truly needed spare
+              parts.
+            </p>
+            <p>
+              <i class="bi bi-chevron-right"></i> Negotiating of prices with
+              vendors so as to ensure quality control.
+            </p>
+            <p>
+              <i class="bi bi-chevron-right"></i> Organising of cost effective
+              buying process.
+            </p>
+            <p>
+              <i class="bi bi-chevron-right"></i> Emotional Negotiation on
+              spares
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 mt-5">
+          <h3>OTHER SERVICES RENDERED</h3>
+          <ul>
+            <li>Purchasing, supply and installation of Perkins Generators.</li>
+            <li>Stockist for genuine spare parts for Perkins generators.</li>
+            <li>
+              Provide buyers Guide on repair and replacement of faulty parts.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container PageLong2">
+      <div class="progress mt-5" style="height: 3px">
+        <div
+          class="progress-bar bg-danger"
+          role="progressbar "
+          style="width: 25%; height: 5px"
+          aria-valuenow="5"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <div class="mt-3 mb-5"><h3>FEATURES OF KOHLER SDMO GENERATOR</h3></div>
+      <div class="row">
+        <div class="col-sm-6 text-left">
+          <div class="key pt-3">
+            <p>
+              <i class="bi bi-chevron-right"></i> It has a longer life-span
+              50,000 hours while others are 10,000 hours.
+            </p>
+            <p>
+              <i class="bi bi-chevron-right"></i> A premium product.. KOHLER
+              SDMO is stronger than any other brands.
+            </p>
+            <p>
+              <i class="bi bi-chevron-right"></i> The engine is user friendly.
+            </p>
+            <p>
+              <i class="bi bi-chevron-right"></i> It has a longer waranty period
+              of 2500 hours, as againt others 2000 hours.
+            </p>
+            <p>
+              <i class="bi bi-chevron-right"></i> Organising of cost effective
+              buying process.
+            </p>
+            <p>
+              <i class="bi bi-chevron-right"></i> Extremely low feul consumption
+              (it save cost). Better sound level.
+            </p>
+            <p>
+              <i class="bi bi-chevron-right"></i>
+              Inbuilt water filter/seperator. Capex and opex friendly.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 mt-4">
+          <h3 class="pl-3">Spare Part Manager</h3>
+          <ul>
+            <li>
+              Sales of Yamaha Generators and Outboard Engines for Speed boats.
+            </li>
+            <li>Sales of FG Wilson Perkins Generators and Spares.</li>
+            <li>Generating revenue from spare parts.</li>
+            <li>
+              Guiding the procurement unit on buying fast moving parts, thereby
+              discouraging Obsolescence.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
